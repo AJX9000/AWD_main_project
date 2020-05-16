@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Takara Sushi - Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- jQuery and Javascript files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jq.js"></script>
+</head>
+<body>
+
+<div class="menuContainer">
+<!--navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li> <!-- Should I include a Gallery or use something else? -->
+            <li><a href="menu.html">MENU</a></li>
+            <li class="navHome"><a href="index.html"><img src="images/takara_sushi_logo_2.png" alt="Home Page"></a></li>
+            <!--<li class="navHome"><a href="index.html">Takara Sushi</a></li>-->
+        </ul>
+    </nav>
+
+<!--    menu title & banner-->
+    <header>
+        <div class="menuHeader">
+            <h1 class="menuTitle">MENU</h1>
+        </div>
+    </header>
+<!--    disclaimer about raw fish-->
+    <div class="menuDisclaimer">
+        <p>* Contains raw fish</p>
+    </div>
+<!--    menu-->
+    <section>
+<!--        appetizers-->
+        <div class="menuAppetizer">
+            <div class="menuItemHeader">
+                <h2>Appetizers</h2>
+            </div>
+            <p class="menuItemContents">
+                Edamame
+                <br>
+                Crab Rangoon
+                <br>
+                Miso Soup
+                <br>
+                Onion Soup
+                <br>
+                Garden Salad
+                <br>
+                Seaweed Salad
+                <br>
+                Avocado Salad
+                <br>
+                Spicy Crab Salad
+                <br>
+                Spicy Squid Salad
+            </p>
+        </div>
+<!--        deep fried-->
+        <div class="menuDeepFried">
+            <div class="menuItemHeader">
+                <h2>Deep Fried</h2>
+            </div>
+            <p class="menuItemContents">
+                Gyoza (Dumpling) (4 ct)
+                <br>
+                Spring Roll (2 ct)
+                <br>
+                Chicken Wings (3 ct)
+                <br>
+                Fried Tofu (2 ct)
+                <br>
+                Fried Calamari (4 ct)
+                <br>
+                Fried Scallop (4 ct)
+                <br>
+                Shumai (4 ct)
+                <br>
+                Curry Chicken
+                <br>
+                Curry Beef
+                <br>
+                Curry Pork
+                <br>
+                Chicken Cutlet
+                <br>
+                Pork Cutlet
+                <br>
+                Chicken Nugget (4 ct)
+                <br>
+                French Fries
+            </p>
+        </div>
+<!--        tempura-->
+        <div class="menuTempura">
+            <div class="menuItemHeader">
+                <h2>Tempura</h2>
+            </div>
+            <p class="menuItemContents">
+                Shrimp Tempura (1 ct)
+                <br>
+                Chicken Tempura (1 ct)
+                <br>
+                Crab Tempura (2 ct)
+                <br>
+                Sweet Potato Tempura (4 ct)
+                <br>
+                Mushroom Tempura (4 ct)
+                <br>
+                Zucchini Tempura (4 ct)
+                <br>
+                Eggplant Tempura (4 ct)
+                <br>
+                Broccoli Tempura (4 ct)
+                <br>
+                Pumpkin Tempura (4 ct)
+                <br>
+                Onion Tempura (4 ct)
+                <br>
+                Mixed Vegetable Tempura (6 ct)
+            </p>
+        </div>
+<!--        sushi/sashimi-->
+        <div class="menuSushi">
+            <div class="menuItemHeader">
+                <h2>Sushi/Sashimi</h2>
+            </div>
+            <p class="menuItemContents">
+                <u>One Piece Per Order</u>
+                <br>
+                * Salmon
+                <br>
+                * Red Tuna
+                <br>
+                * White Tuna
+                <br>
+                * Yellowtail
+                <br>
+                * Tilapia
+                <br>
+                * Mackerel
+                <br>
+                * Surf Clam
+                <br>
+                Crab
+                <br>
+                Egg Custard
+            </p>
+        </div>
+<!--        temaki (hand roll)-->
+        <div class="menuTemaki">
+            <div class="menuItemHeader">
+                <h2>Temaki (Hand Roll)</h2>
+            </div>
+            <p class="menuItemContents">
+                <u>One Cone-Shaped Roll Per Order</u>
+                <br>
+                * Spicy Salmon
+                <br>
+                * Spicy Tuna
+                <br>
+                Spicy Snow Crab
+                <br>
+                California
+                <br>
+                Shrimp Tempura
+                <br>
+                Salmon Skin
+                <br>
+                Eel Avocado
+                <br>
+                Eel Cucumber
+                <br>
+                * Salmon Avocado
+                <br>
+                * Red Tuna Avocado
+                <br>
+                * White Tuna Avocado
+                <br>
+                * Yellowtail Avocado
+                <br>
+                Avocado
+                <br>
+                Cucumber
+                <br>
+                Cucumber Avocado
+                <br>
+                Sweet Potato
+            </p>
+        </div>
+<!--        maki (cut roll)-->
+        <div class="menuMaki">
+            <div class="menuItemHeader">
+                <h2>Maki (Cut Roll)</h2>
+            </div>
+            <p class="menuItemContents">
+                * Philadelphia Roll (6 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Smoked salmon, cream cheese
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; & avocado
+                <br>
+                * Rainbow Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Crab,avocado & cucumber
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; topped w. fresh fish
+                <br>
+                Dynamite Roll (6 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura, avocado
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; & tobiko w. spicy mayo & eel sauce
+                Snow Mountain Roll (6 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Crab, crispy tempura flake
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; w. spicy mayo
+                <br>
+                Out of Control Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Deep fried spicy tuna
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; & avocado w. spicy mayo &
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; eel sauce
+                <br>
+                Boston Roll (6 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp, cucumber & lettuce
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; w. mayo
+                <br>
+                * Spicy Salmon Roll (6 pieces)
+                <br>
+                * Spicy Tuna Roll (6 pieces)
+                <br>
+                Spicy Snow Crab Roll (6 pieces)
+                <br>
+                California Roll (6 pieces)
+                <br>
+                Chicken Tempura Roll (6 pieces)
+                <br>
+                Shrimp Tempura Roll (6 pieces)
+                <br>
+                Eel Avocado (6 pieces)
+                <br>
+                Eel Cucumber (6 pieces)
+                <br>
+                Salmon Skin (6 pieces)
+                <br>
+                * Red Tuna Roll (6 pieces)
+                <br>
+                * White Tuna Roll (6 pieces)
+                <br>
+                * Salmon Roll (6 pieces)
+                <br>
+                * Yellowtail Roll (6 pieces)
+                <br>
+                * Red Tuna Avocado Roll (6 pieces)
+                <br>
+                * White Tuna Avocado (6 pieces)
+                <br>
+                * Salmon Avocado Roll (6 pieces)
+                <br>
+                * Yellowtail Avocado Roll (6 pieces)
+                <br>
+                Sweet Potato Roll (6 pieces)
+                <br>
+                Peanut Avocado Roll (6 pieces)
+                <br>
+                Avocado Roll (6 pieces)
+                <br>
+                Cucumber Roll (6 pieces)
+                <br>
+                Cucumber Avocado Roll (6 pieces)
+            </p>
+        </div>
+<!--        special rolls-->
+        <div class="menuSpecialRolls">
+            <div class="menuSpecialRollsHeader">
+                <h2>Special Rolls</h2>
+            </div>
+            <p class="menuItemContents">
+                1. Out of Control Roll (5 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Deep fried spicy tuna & avocado
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; w. spicy mayo & eel sauce
+                <br>
+                2. Dragon Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Eel & cucumber, avocado on top
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; w. eel sauce & tobiko
+                <br>
+                3. Emperor Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Sweet snow crab and cucumber
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; rolled w. mango, avocado, tobiko
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; and spicy caviar sauce
+                <br>
+                4. Rainbow Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Crab & cucumber top with fresh fish
+                <br>
+                5. Sweet Crab Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura, avocado, and
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; cucumber topped with crab,
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; mango sauce & eel sauce
+                <br>
+                6. Typhoon Roll  (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura & cucumber topped
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; with warm spicy mayo, diced shrimp
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; & spicy tuna
+                <br>
+                7. Volcano Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura top with spicy tuna,
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; spicy mayo & eel sauce
+                <br>
+                9. #9 Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura top with avocado &
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; salmon
+                <br>
+                10. Yum Yum Roll (5 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura & cream cheese,
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; topped with eel & avocado.
+                <br>
+                11. Mexican Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Tuna, jalapeno, and mango, topped
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; with avocado, spicy mayo & eel sauce
+                <br>
+                12. Spicy Girl Roll (5 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Spicy tuna & cucumber top with spicy
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; salmon
+                <br>
+                13. BMW Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Deep fried spicy tuna & cream cheese,
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; spicy mayo sauce & eel sauce
+                <br>
+                14. MJ Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura w. spicy salmon
+                <br>
+                15. Pink Lady (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Spicy tuna, avocado, eel, shrimp tempura
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; rolled in pink soybean paper, topped
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; w. eel sauce & sweet chili sauce
+                <br>
+                16. Salmon Family Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Salmon w. cucumber & avocado,
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; topped w. spicy salmon
+                <br>
+                17. Sakura Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Spicy snow crab, masago & avocado,
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; topped w. tuna and white tuna
+                <br>
+                18. Crunchy Roll (8 pieces)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; Shrimp tempura and cucumber covered
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; with furikake & tobiko
+            </p>
+        </div>
+
+
+    </section>
+
+</div>
+
+</body>
+</html>

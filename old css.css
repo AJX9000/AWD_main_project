@@ -1,0 +1,372 @@
+/*menu - category foreground (small)*/
+.menuForegroundSmall {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 340px;
+    height: 340px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 135px;
+}
+/*menu - category foreground (big)*/
+.menuForegroundBig {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: 720px;
+    height: 360px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 138px;
+}
+/*menu - "Appetizer" area */
+.menuAppetizer {
+    position: absolute;
+    top: 680px;
+    left: 88px;
+    width: 400px;
+    height: 400px;
+
+    background: #94E478 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+}
+/*menu - "Deep Fried" area*/
+.menuDeepFried {
+    position: absolute;
+    top: 1120px;
+    left: 88px;
+    width: 400px;
+    height: 400px;
+
+    background: #EFD272 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+}
+/*menu - "Sushi/Sashimi" area*/
+.menuSushi {
+    position: absolute;
+    /*display: block;*/
+    /*margin: 0 auto;*/
+    top: 680px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*right: 560px;*/
+    /*bottom: 520px;*/
+    width: 800px;
+    height: 400px;
+
+    background: #FFA5A5 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+}
+/*menu - "Special Rolls" area*/
+.menuSpecialRolls {
+    position: absolute;
+    top: 1120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 800px;
+    height: 400px;
+
+    background: #FF95D1 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+}
+/*menu - "Maki (Cut Roll)" area*/
+.menuMaki {
+    position: absolute;
+    top: 680px;
+    right: 88px;
+    width: 400px;
+    height: 400px;
+
+    background: #94E478 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+}
+.menuMakiForeground { /* location correction for "Maki (Cut Roll)" title */
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 340px;
+    height: 340px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 100px;
+}
+/*menu - "Tempura" area*/
+.menuTempura {
+    position: absolute;
+    top: 1120px;
+    right: 88px;
+    width: 400px;
+    height: 400px;
+
+    background: #EFD272 0% 0% no-repeat padding-box;
+    border-radius: 120px;
+}
+/*menu - styling for the menu contents upon clicking*/
+.menuAppetizerContents .menuDeepFriedContents .menuMakiContents .menuTempuraContents {
+
+}
+.menuSushiContents .menuSpecialRollsContents {
+
+}
+/*menu - resizing the smaller menu squares to fit more items */
+.menuForegroundSmallAnim {
+
+}
+/*menu - moving the menu category title upwards*/
+.menuForegroundBigAnim {
+
+}
+
+/*
+APPETIZERS
+Edamame
+<br>
+Crab Rangoon
+<br>
+Miso Soup
+<br>
+Onion Soup
+<br>
+Garden Salad
+<br>
+Seaweed Salad
+<br>
+Avocado Salad
+<br>
+Spicy Crab Salad
+<br>
+Spicy Squid Salad
+
+DEEP FRIED
+Gyoza (Dumpling) (4 ct)
+<br>
+Spring Roll (2 ct)
+<br>
+Chicken Wings (3 ct)
+<br>
+Fried Tofu (2 ct)
+<br>
+Fried Calamari (4 ct)
+<br>
+Fried Scallop (4 ct)
+<br>
+Shumai (4 ct)
+<br>
+Curry Chicken
+<br>
+Curry Beef
+<br>
+Curry Pork
+<br>
+Chicken Cutlet
+<br>
+Pork Cutlet
+<br>
+Chicken Nugget (4 ct)
+<br>
+French Fries
+
+SASHIMI/SUSHI (NIGIRI)
+One Piece Per Order
+<br>
+* Salmon
+<br>
+* Red Tuna
+<br>
+* White Tuna
+<br>
+* Yellowtail
+<br>
+* Tilapia
+<br>
+* Mackerel
+<br>
+* Surf Clam
+<br>
+Crab
+<br>
+Egg Custard
+
+SPECIAL ROLLS
+1. Out of Control Roll (5 pieces)
+<br>
+        Deep fried spicy tuna & avocado
+         w. spicy mayo & eel sauce
+<br>
+2. Dragon Roll (8 pieces)
+<br>
+        Eel & cucumber, avocado on top
+         w. eel sauce & tobiko
+<br>
+3. Emperor Roll (8 pieces)
+<br>
+        Sweet snow crab and cucumber
+         rolled w. mango, avocado, tobiko
+         and spicy caviar sauce
+<br>
+4. Rainbow Roll (8 pieces)
+<br>
+        Crab & cucumber top with fresh fish
+<br>
+5. Sweet Crab Roll (8 pieces)
+<br>
+        Shrimp tempura, avocado, and
+         cucumber topped with crab,
+         mango sauce & eel sauce
+<br>
+6. Typhoon Roll  (8 pieces)
+<br>
+        Shrimp tempura & cucumber topped
+         with warm spicy mayo, diced shrimp
+         & spicy tuna
+<br>
+7. Volcano Roll (8 pieces)
+<br>
+        Shrimp tempura top with spicy tuna,
+         spicy mayo & eel sauce
+<br>
+9. #9 Roll (8 pieces)
+<br>
+        Shrimp tempura top with avocado & salmon
+<br>
+10. Yum Yum Roll (5 pieces)
+<br>
+        Shrimp tempura & cream cheese,
+         topped with eel & avocado.
+<br>
+11. Mexican Roll (8 pieces)
+<br>
+        Tuna, jalapeno, and mango, topped
+         with avocado, spicy mayo & eel sauce
+<br>
+12. Spicy Girl Roll (5 pieces)
+<br>
+        Spicy tuna & cucumber top with spicy salmon
+<br>
+13. BMW Roll (8 pieces)
+<br>
+        Deep fried spicy tuna & cream cheese,
+         spicy mayo sauce & eel sauce
+<br>
+14. MJ Roll (8 pieces)
+<br>
+        Shrimp tempura w. spicy salmon
+<br>
+15. Pink Lady (8 pieces)
+<br>
+        Spicy tuna, avocado, eel, shrimp tempura
+         rolled in pink soybean paper, topped
+         w. eel sauce & sweet chili sauce
+<br>
+16. Salmon Family Roll (8 pieces)
+<br>
+        Salmon w. cucumber & avocado,
+         topped w. spicy salmon
+<br>
+17. Sakura Roll (8 pieces)
+<br>
+        Spicy snow crab, masago & avocado,
+         topped w. tuna and white tuna
+<br>
+18. Crunchy Roll (8 pieces)
+<br>
+        Shrimp tempura and cucumber covered
+         with furikake & tobiko
+
+MAKI (CUT ROLL)
+* Philadelphia Roll (6 pieces)
+<br>
+* Rainbow Roll (8 pieces)
+<br>
+Dynamite Roll (6 pieces)
+<br>
+Snow Mountain Roll (6 pieces)
+<br>
+Boston Roll (6 pieces)
+<br>
+* Spicy Salmon Roll (6 pieces)
+<br>
+* Spicy Tuna Roll (6 pieces)
+<br>
+Spicy Snow Crab Roll (6 pieces)
+<br>
+California Roll (6 pieces)
+<br>
+Chicken Tempura Roll (6 pieces)
+<br>
+Shrimp Tempura Roll (6 pieces)
+<br>
+Eel Avocado (6 pieces)
+<br>
+Eel Cucumber (6 pieces)
+<br>
+Salmon Skin (6 pieces)
+<br>
+* Red Tuna Roll (6 pieces)
+<br>
+* White Tuna Roll (6 pieces)
+<br>
+* Salmon Roll (6 pieces)
+<br>
+* Yellowtail Roll (6 pieces)
+<br>
+* Red Tuna Avocado Roll (6 pieces)
+<br>
+* White Tuna Avocado (6 pieces)
+<br>
+* Salmon Avocado Roll (6 pieces)
+<br>
+* Yellowtail Avocado Roll (6 pieces)
+<br>
+Sweet Potato Roll (6 pieces)
+<br>
+Peanut Avocado Roll (6 pieces)
+<br>
+Avocado Roll (6 pieces)
+<br>
+Cucumber Roll (6 pieces)
+<br>
+Cucumber Avocado Roll (6 pieces)
+
+TEMPURA
+Shrimp Tempura (1 ct)
+<br>
+Chicken Tempura (1 ct)
+<br>
+Crab Tempura (2 ct)
+<br>
+Sweet Potato Tempura (4 ct)
+<br>
+Mushroom Tempura (4 ct)
+<br>
+Zucchini Tempura (4 ct)
+<br>
+Eggplant Tempura (4 ct)
+<br>
+Broccoli Tempura (4 ct)
+<br>
+Pumpkin Tempura (4 ct)
+<br>
+Onion Tempura (4 ct)
+<br>
+Mixed Vegetable Tempura (6 ct)
+*/

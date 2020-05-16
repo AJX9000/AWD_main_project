@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Takara Sushi - Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- jQuery and Javascript files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jq.js"></script>
+</head>
+<body>
+
+<div class="gallContainer">
+    <!--navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li> <!-- Should I include a Gallery or use something else? -->
+            <li><a href="menu.html">MENU</a></li>
+            <li class="navHome"><a href="index.html"><img src="images/takara_sushi_logo_2.png" alt="Home Page"></a></li>
+        </ul>
+    </nav>
+
+<!--    gallery title -->
+    <header>
+        <div class="gallHeader">
+            <h1 class="gallTitle">GALLERY</h1>
+        </div>
+    </header>
+<!--    the slide show itself -->
+    <section>
+        <div class="gallSlideSection">
+            <div class="gallSlides fade">
+                <img src="images/1.jpg" style="width:100%" alt="Unagi Dish">
+                <div class="gallSlideText">Unagi Dish</div>
+            </div>
+            <div class="gallSlides fade">
+                <img src="images/2.jpg" style="width:100%" alt="Crab Dishes With Sides">
+                <div class="gallSlideText">Crab Dishes With Sides</div>
+            </div>
+            <div class="gallSlides fade">
+                <img src="images/3.jpg" style="width:100%"  alt="Shumai">
+                <div class="gallSlideText">Shumai</div>
+            </div>
+            <div class="gallSlides fade">
+                <img src="images/4.jpg" style="width:100%"  alt="Fried Rice, Salads, and Sake (Rice Liquor)">
+                <div class="gallSlideText">Fried Rice, Salads, and Sake (Rice Liquor)</div>
+            </div>
+            <div class="gallSlides fade">
+                <img src="images/5.jpg" style="width:100%"  alt="Sashimi Assortment">
+                <div class="gallSlideText">Sashimi Assortment</div>
+            </div>
+            <div class="gallSlides fade">
+                <img src="images/6.jpg" style="width:100%"  alt="Various Dishes - Sushi, Sashimi, Rolls, Fruit">
+                <div class="gallSlideText">Various Dishes - Sushi, Sashimi, Rolls, Fruit</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="gallPrev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="gallNext" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="gallDot" onclick="currentSlide(1)"></span>
+            <span class="gallDot" onclick="currentSlide(2)"></span>
+            <span class="gallDot" onclick="currentSlide(3)"></span>
+            <span class="gallDot" onclick="currentSlide(4)"></span>
+            <span class="gallDot" onclick="currentSlide(5)"></span>
+            <span class="gallDot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+</div>
+<!--javascript required to run gallery-->
+<script src="js/gallery.js"></script>
+
+</body>
+</html>

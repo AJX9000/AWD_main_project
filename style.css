@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/*body {
+    line-height: 1;
+}*/
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ------------------------------------------------ */
+
+
+/* body - background color for whole website */
+body {
+    background-color: #411414;
+}
+
+/* default container for each page */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 1080px;
+    background: #411414;
+    margin: 0 auto;
+}
+/* navigation bar background */
+nav {
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    background: #E5E297;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* nav bar - styling for navigation links */
+nav a {
+    /*display: block;*/
+    float: right;
+    color: #411414;
+
+    text-align: center;
+    font-family: "Hobo Std", Arial, sans-serif;
+    font-weight: bold;
+    /*width: 150px;*/
+}
+a:link {
+    text-decoration: none;
+    color: #411414;
+}
+a:visited {
+    text-decoration: none;
+    color: #411414;
+}
+a:hover {
+    text-decoration: none;
+    color: green;
+}
+a:active {
+    text-decoration: none;
+    color: black;
+}
+/* nav - further formatting for links */
+ul {
+    list-style-type: none; /* removes bullet points */
+    /*margin: 0 50px 0 50px;*/
+    padding-right: 80px;
+    padding-left: 80px;
+    overflow: hidden;
+    font-size: 28px;
+}
+li {
+    float: right;
+    padding: 20px 50px 20px 50px;
+}
+li a {
+    /*padding: 20px 50px 20px 50px;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+}
+/* nav - home page button */
+.navHome {
+    float: left;
+    font-size: 60px;
+    padding: 0 50px 0 50px;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+}
+/*default title styling for menu, gallery, and about pages*/
+.title {
+    color: #E5E297;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: center;
+
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+
+/* INDEX.HTML */
+/* home page - container for banner (for photo and tagline) */
+.homeHeader {
+    position: relative;
+    display: block;
+    float: none;
+    width: 100vw;
+    height: 520px;
+    margin: 0 auto;
+    background-color: black;
+
+    align-items: center; /* look at Dopefish site */
+}
+/* home page - banner image */
+.homePhoto {
+    position: relative;
+    display: none;
+    /*float: none;*/
+    width: 832px;
+    height: 520px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*margin: 0 auto;*/
+    background-color: black;
+
+    align-items: center;
+}
+/* home page - tagline ("All you can eat sushi.") */
+.homeTaglineBanner {
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    /*top: 480px;*/
+    background: black;
+    font-size: 60px;
+    display: block;
+
+    text-align: center;
+}
+.homeTagline {
+    display: none;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #E5E297;
+}
+/* home page - location info container */
+.homeLocationDiv {
+    position: absolute;
+    padding-left: 412.5px;
+    /*left: 412.5px;*/
+    top: 760px;
+
+    color: #E5E297;
+    font-family: "Lato", Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+/* home page - opening hours container */
+.homeHoursDiv {
+    position: absolute;
+    right: 379.5px;
+    top: 760px;
+
+    color: #E5E297;
+    font-family: "Lato", Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+/* home page - location and hours title ("LOCATION" and "HOURS") */
+.homeInfoTitle {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+.homeInfoSeparator {
+    width: 300px;
+    border: 2px solid #E5E297;
+}
+/* home page - location and hours info/details */
+.homeInfoDetails {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 12px;
+    line-height: 36px;
+}
+
+/*MENU.HTML*/
+/*menu container*/
+.menuContainer {
+    position: relative;
+    width: 100vw;
+    height: 2020px;
+    background: #411414;
+    margin: 0 auto;
+}
+/*menu - title & banner*/
+.menuHeader {
+    position: relative;
+    display: block;
+    /*float: none;*/
+    width: 100vw;
+    height: 520px;
+    margin: 0 auto;
+    background: url("images/sushi 2.jpg") no-repeat center fixed;
+    background-size: cover;
+
+    color: #411414;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: center;
+    /*align-items: center;*/
+    /*align-content: center;*/
+}
+/*menu - darker color for title font*/
+.menuTitle {
+    color: #411414;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: center;
+    display: none;
+
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+/*menu - disclaimer about raw fish*/
+.menuDisclaimer {
+    position: absolute;
+    margin: 0 auto;
+    top: 608px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    color: #E5E297;
+}
+/*menu - default stylings for menu contents; exception being "Special Rolls" section*/
+.menuItemHeader {
+    position: relative;
+    /*top: 0;*/
+    width: 360px;
+    height: 48px;
+    background: #E15B70;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    vertical-align: center;
+    padding-top: 12px;
+    padding-left: 22px;
+}
+.menuItemContents {
+    padding-top: 10px;
+    padding-left: 22px;
+}
+/*menu - "Appetizer" area */
+.menuAppetizer {
+    position: absolute;
+    display: block;
+    top: 640px;
+    left: 196px;
+    width: 360px;
+    height: 281px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Appetizer" area */
+.menuAppetizer {
+    position: absolute;
+    top: 640px;
+    left: 196px;
+    width: 360px;
+    height: 281px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Deep Fried" area */
+.menuDeepFried {
+    position: absolute;
+    top: 937px;
+    left: 196px;
+    width: 360px;
+    height: 401px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Tempura" area*/
+.menuTempura {
+    position: absolute;
+    top: 1354px;
+    left: 196px;
+    width: 360px;
+    height: 329px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Sushi/Sashimi" area*/
+.menuSushi {
+    position: absolute;
+    top: 640px;
+    left: 572px;
+    width: 360px;
+    height: 305px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Temaki (Hand Roll)" area*/
+.menuTemaki {
+    position: absolute;
+    top: 961px;
+    left: 572px;
+    width: 360px;
+    height: 473px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Maki (Cut Roll)" area*/
+.menuMaki {
+    position: absolute;
+    top: 640px;
+    right: 612px;
+    width: 360px;
+    height: 1049px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+/*menu - "Special Rolls" area; wider than the other menu sections*/
+.menuSpecialRollsHeader {
+    position: relative;
+    /*top: 0;*/
+    width: 400px;
+    height: 48px;
+    background: #E15B70;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    vertical-align: center;
+    padding-top: 12px;
+    padding-left: 22px;
+}
+.menuSpecialRolls {
+    position: absolute;
+    top: 640px;
+    right: 196px;
+    width: 400px;
+    height: 1344px;
+    background: #F6E6E8;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+
+/*GALLERY.HTML*/
+/*gallery - container*/
+.gallContainer {
+    position: relative;
+    width: 100vw;
+    height: 1400px;
+    background: #411414;
+    margin: 0 auto;
+}
+/*gallery - title & banner background*/
+.gallHeader {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 520px;
+    margin: 0 auto;
+    background-color: black;
+
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+.gallTitle {
+    display: none;
+    color: #E5E297;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: center;
+}
+/* gallery - container specifically for slideshow */
+.gallSlideSection {
+    position: relative;
+    display: block;
+    /*align-items: center;
+    justify-content: center;*/
+    top: 40px;
+    /*left: 25%;*/
+    /*box-sizing: border-box;*/
+    max-width: 1000px;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+/* gallery - hides images by default; hidden until needed */
+.gallSlides {
+    display: none;
+}
+/* gallery - next & previous buttons */
+.gallPrev, .gallNext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 30px 30px 0;
+    user-select: none;
+}
+/* gallery - positions the "next button" to the right */
+.gallNext {
+    right: 0;
+    border-radius: 30px 0 0 30px;
+}
+/* gallery - on hover, add a black background color with a little bit see-through */
+.gallPrev:hover, .gallNext:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*gallery - captions for each picture*/
+.gallSlideText {
+    color: #E5E297;
+    font-size: 36px;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: normal;
+    -webkit-text-stroke: 1px black;
+
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* gallery - bottom dots for picture navigation */
+.gallDot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .gallDot:hover {
+    background-color: #4f4f4f;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    /*0%      {opacity: 1}
+    50%     {opacity: 0}
+    100%    {opacity: 1}*/
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    /*0%      {opacity: 1}
+    50%     {opacity: 0}
+    100%    {opacity: 1}*/
+}
+
+/*ABOUT.HTML*/
+/*about - header*/
+.container {
+    position: relative;
+    width: 100vw;
+    height: 1080px;
+    background: #411414;
+    margin: 0 auto;
+}
+/*about - banner image & text*/
+.aboutHeader {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 520px;
+    margin: 0 auto;
+    background-color: black;
+    background: url("images/sushi 4.jpeg") no-repeat center fixed;
+    background-size: cover;
+
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+.aboutTitle {
+    display: none;
+    color: #411414;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+}
+/*about - banner image*/
+.aboutImage {
+    position: static;
+    display: flex;
+    /*float: none;*/
+    width: 924px;
+    height: 520px;
+    margin: 0 auto;
+    background-color: black;
+
+    align-items: center;
+}
+/*about - paragraph contents*/
+.aboutPara {
+    position: relative;
+    top: 40px;
+    width: 1364px;
+    margin: 0 auto;
+
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #E5E297;
+}
